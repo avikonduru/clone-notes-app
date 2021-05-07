@@ -5,15 +5,17 @@
   "main": "server.js",
   "scripts": {
     "start": "node server",
-		"server": "nodemon server"
+    "server": "nodemon server"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.21.1",
     "cors": "^2.8.5",
+    "dotenv": "^9.0.0",
     "express": "^4.17.1",
-    "express-validator": "^6.10.1"
+    "express-validator": "^6.10.1",
+    "mongoose": "^5.12.7"
   },
   "devDependencies": {
     "concurrently": "^6.0.2",
