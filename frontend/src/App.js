@@ -1,13 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
-import Button from 'react-bootstrap/Button';
+// Components
+import FolderComponent from './components/FolderSection/FolderComponent'
+import NotesComponent from './components/NotesSection/NotesComponent'
+import EditorComponent from './components/EditorSection/EditorComponent'
+
+// Bootstrap
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 function App() {
   return (
-    <div>
-      Hello World
-      <Button>Hi There</Button>
-    </div>
+      <Container>
+        <Row>
+          <Col>
+            <FolderComponent/>
+          </Col>
+          <Col>
+            <NotesComponent/>
+          </Col>
+          <Col xs={6}>
+            <EditorComponent/>
+          </Col>
+        </Row>
+      </Container>
   );
 }
 
