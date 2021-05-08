@@ -1,11 +1,17 @@
 const express = require('express');
-const cors = require('cors');
-
 const app = express();
+const dotenv = require('dotenv');
+const cors = require('cors');
+const connectDB = require('./config/db');
 
-// Init Middleware
+dotenv.config();
+
+//Connect Database
+connectDB();
+
+//Middlewares
 app.use(cors());
-app.use(express.json({ extended: false }));
+app.use(express.json());
 
 app.get('/', (req, res) => res.send('API Running'));
 

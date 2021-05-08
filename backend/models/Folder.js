@@ -7,4 +7,4 @@ const FolderSchema = mongoose.Schema({
 	}
 });
 
-module.exports = mongoose.model('user', FolderSchema);
+module.exports = mongoose.model('folder', FolderSchema);
